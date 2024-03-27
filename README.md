@@ -1,5 +1,5 @@
 # Weather-Web-Application
- Desktop & Mobile versions, HTML CSS
+ Desktop & Mobile versions, HTML, CSS, JS
  
  1. The project has been challenging to complete because some of the small tasks took a lot of time to understand and then implement. I have been working on this project for the last 2 weeks and it has been exciting because it feels like a real project in real work.
  
