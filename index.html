@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard Application</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <!--SEARCH-CONTAINER-->
+      <div id="search-container" class="search-input">
+        <input
+          id="search-input"
+          type="text"
+          placeholder="Enter your city"
+          class="input_field"
+        />
+        <button id="search-button" type="submit" class="btn_search">
+          Search
+        </button>
+        <div id="errorMessage" class="error-message"></div>
+      </div>
+      <!--RESULT-CONTAINER-->
+      <div id="result-container" class="container" style="display: none">
+        <!--WEATHER INPUT-->
+        <div id="weather-input" class="weather-input"></div>
+        <!--WEATHER-DATA-->
+        <div class="weather-data">
+          <div class="weather-data-inner">
+            <!--WEATHER-PROFILE-SIDEBAR-->
+            <div class="weather-profile bg-grey">
+              <div class="profile-icon">
+                <img src="./assets/images/app-profile.png" alt="" />
+              </div>
+              <ul class="profile-menu">
+                <li class="menu-list">
+                  <img src="./assets/images/weather-icon.png" alt="" />
+                  <span>weather</span>
+                </li>
+                <li class="menu-list">
+                  <img src="./assets/images/explore-icon.png" alt="" />
+                  <span>explore</span>
+                </li>
+                <li class="menu-list">
+                  <img src="./assets/images/location-icon.png" alt="" />
+                  <span>cities</span>
+                </li>
+                <li class="menu-list">
+                  <img src="./assets/images/settings-icon.png" alt="" />
+                  <span>settings</span>
+                </li>
+              </ul>
+            </div>
+            <!--WEATHER-ACTIVITIES-->
+            <div class="weather-activities bg-grey">
+              <h3>Activities in your area</h3>
+              <div class="activities">
+                <div class="">
+                  <img src="assets/images/activity-4.png" alt="activities" />
+                  <span>2km away</span>
+                </div>
+                <div class="">
+                  <img src="assets/images/activity-3.png" alt="activities" />
+                  <span>1.5km away</span>
+                </div>
+                <div class="">
+                  <img src="assets/images/activity-2.png" alt="activities" />
+                  <span>3km away</span>
+                </div>
+                <div class="">
+                  <img src="assets/images/activity-1.png" alt="activities" />
+                  <span>500m away</span>
+                </div>
+              </div>
+            </div>
+            <!--REAL-TIME-WEATHER-24-->
+            <div id="hourly-forecast" class="weather-24-forecast bg-grey"></div>
+
+            <!--DAILY-FORECAST-->
+            <div class="weather-daily-forecast bg-grey">
+              <div class="top-container" id="daily-forecast"></div>
+
+              <!--TIME-ZONE-->
+              <div id="local-time" class="time-zone"></div>
+
+              <!--AIR-CONDITIONS-->
+              <div class="air-conditions">
+                <h4>AIR CONDITIONS</h4>
+                <div class="day-info">
+                  <div class="content">
+                    <img
+                      src="./assets/images/real-feel-icon.png"
+                      alt="real-feel-icon"
+                    />
+                    <div class="content-title">
+                      <p class="title">Real Feel</p>
+                      <p id="real-feel" class="value"></p>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <img src="./assets/images/wind-icon.png" alt="wind-icon" />
+                    <div class="content-title">
+                      <p class="title">Wind</p>
+                      <p id="wind-speed" class="value"></p>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <img src="./assets/images/rain-icon.png" alt="rain-icon" />
+                    <div class="content-title">
+                      <p class="title">Chance of rain</p>
+                      <p id="rain-change" class="value"></p>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <img src="./assets/images/uv.png" alt="uv-index-icon" />
+                    <div class="content-title">
+                      <p class="title">UV Index</p>
+                      <p id="uv-index" class="value"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
